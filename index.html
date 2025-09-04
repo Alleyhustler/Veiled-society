@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veiled Society</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Lilita+One&family=Rubik+Broken+Fax&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Key Image Trigger -->
+        <div class="centered-key" onclick="openPasswordModal()">
+            <img src="vecteezy_simple-lock-and-wing-logo_20390190-removebg-preview.png" alt="Key Icon">
+            <p class="key-text"></p>
+        </div>
+
+        <!-- Hidden Content -->
+        <div class="content hidden" id="content">
+            <h1 class="rubik-broken-fax-regular veiled-realms-title">Veiled Society</h1>
+            <p>Initiate, you have found the gateway. The Veiled Society operates beyond the sight of the unworthy. Your curiosity has been noted. Proceed with caution—ignorance is a far safer path.</p>
+
+            <section id="about">
+                <h2 class="rubik-broken-fax-regular underline-title">Our Shadow</h2>
+                <p><span class="first-word">We</span> are the unseen hand. A syndicate woven into the fabric of society itself, operating from the deepest shadows. Our influence is absolute, our network vast, and our existence denied by those who fear the truth.</p>
+                <p>To know our name is a risk. To seek us out is a declaration. There is no turning back.</p>
+                <img src="animated-line-image-0467.gif" alt="Spacer Image" class="spacer-image">
+            </section>
+
+            <section id="veilednomics">
+                <h2 class="rubik-broken-fax-regular underline-title">The Economy of Influence</h2>
+                <p><span class="first-word">Our</span> currency is not traded on any open market. It is measured in secrets, in leverage, and in silent obedience. Assets are moved, fortunes are shifted, and power is consolidated away from the blinding light of scrutiny.</p>
+                <p>Compliance is rewarded. Opposition is erased.</p>
+                <img src="animated-line-image-0467.gif" alt="Spacer Image" class="spacer-image">
+            </section>
+
+            <section id="arcane-links">
+                <h2 class="rubik-broken-fax-regular underline-title">Channels of Communication</h2>
+                <p>These conduits are fragile and transient. Use them with discretion. The watchful eyes of outsiders are always searching.</p>
+                <ul>
+                    <li><a href="https://x.com/VeiledSociety" target="_blank">Twitter: @VeiledSociety</a></li>
+                    <li><a href="https://x.com/VeiledSociety" target="_blank">Frequency: Secure Channel 7</a></li>                </ul>
+                <p>This link is not a mistake. You were meant to find it.</p>
+                <img src="animated-line-image-0467.gif" alt="Spacer Image" class="spacer-image">
+            </section>
+
+            <section id="artifacts">
+                <h2 class="rubik-broken-fax-regular underline-title">The Instruments</h2>
+                <p>These are the tools of our trade. They are not for the faint of heart.</p>
+                <ul>
+                    <li>The Dossier of Compliance</li>
+                    <li>The Cypher of Whispers</li>
+                    <li>The Ledger of Shadows</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <!-- Password Modal -->
+    <div id="passwordModal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Enter the Ticker (All lowercase)</h2>
+            <input type="password" id="passwordInput" placeholder="Enter Code">
+            <button type="button" onclick="togglePasswordVisibility()">Reveal</button>
+            <button onclick="checkPassword()">Unlock</button>
+            <div id="errorMessage" class="error-message hidden">The code is incorrect. Try again, Seeker.</div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
